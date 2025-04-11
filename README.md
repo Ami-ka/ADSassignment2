@@ -54,7 +54,7 @@ It's a custom queue implementation built on top of the `MyArrayList<T>` dynamic 
 
 ---
 
-### Features
+# Features
 
 - Generic type support (`T extends Comparable<T>`)
 - Follows FIFO principle (First-In-First-Out)
@@ -69,7 +69,7 @@ It's a custom queue implementation built on top of the `MyArrayList<T>` dynamic 
 
 ---
 
-### Usage
+# Usage
 
 You can create and use the queue like this:
 
@@ -82,6 +82,46 @@ queue.enqueue(30);
 System.out.println(queue.dequeue()); // 10
 System.out.println(queue.peek());    // 20
 System.out.println(queue.size());    // 2
+```
+
+---
+
+
+
+## MyStack
+
+It's a custom stack implementation built on top of the `MyArrayList<T>` dynamic array.
+
+---
+
+# Features
+
+- Generic type support (`T extends Comparable<T>`)
+- Follows LIFO principle (Last-In-First-Out)
+- Core stack operations:
+  - `push(item)` – add an element to the top of the stack
+  - `pop()` – remove and return the top element
+  - `peek()` – view the top element without removing
+- Utility methods:
+  - `isEmpty()` – check if the stack is empty
+  - `size()` – get current number of elements
+  - (Optional) `clear()`, `contains()`, `toArray()` – can be added easily
+
+---
+
+# Usage
+
+You can create and use the stack like this:
+
+```java
+MyStack<Integer> stack = new MyStack<>();
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+System.out.println(stack.pop());  // 30
+System.out.println(stack.peek()); // 20
+System.out.println(stack.size()); // 2
 ```
 
 ---
