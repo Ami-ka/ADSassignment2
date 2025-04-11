@@ -65,7 +65,7 @@ It's a custom queue implementation built on top of the `MyArrayList<T>` dynamic 
 - Utility methods:
   - `isEmpty()` – check if the queue is empty
   - `size()` – get current number of elements
-  - (Optional) `clear()`, `contains()`, `toArray()` – can be added easily
+  
 
 ---
 
@@ -105,7 +105,7 @@ It's a custom stack implementation built on top of the `MyArrayList<T>` dynamic 
 - Utility methods:
   - `isEmpty()` – check if the stack is empty
   - `size()` – get current number of elements
-  - (Optional) `clear()`, `contains()`, `toArray()` – can be added easily
+  
 
 ---
 
@@ -126,3 +126,48 @@ System.out.println(stack.size()); // 2
 
 ---
 
+
+
+## MyMinHeap
+
+It's a custom **Min Heap** implementation built on top of the `MyArrayList<T>` dynamic array.
+
+---
+
+# Features
+
+- Generic type support (`T extends Comparable<T>`)
+- Implements min-heap structure (parent nodes are always smaller than their children)
+- Core heap operations:
+  - `insert(item)` – add an element and maintain heap order
+  - `extractMin()` – remove and return the smallest element
+  - `peek()` – return the smallest element without removing
+- Utility methods:
+  - `isEmpty()` – check if the heap is empty
+  - `size()` – get current number of elements
+  
+
+---
+
+# Usage
+
+You can create and use the min heap like this:
+
+```java
+MyMinHeap<Integer> heap = new MyMinHeap<>();
+heap.insert(30);
+heap.insert(10);
+heap.insert(20);
+
+System.out.println(heap.peek());       // 10
+System.out.println(heap.extractMin()); // 10
+System.out.println(heap.peek());       // 20
+System.out.println(heap.size());       // 2
+```
+
+---
+
+Efficient for priority-based operations like scheduling, pathfinding (Dijkstra’s), and more.  
+Backed by your own `MyArrayList`, ensuring dynamic resizing and element access.
+
+---
