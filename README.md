@@ -48,3 +48,41 @@ Supports generic data types that implement `Comparable`, e.g., `Integer`, `Strin
 
 ---
 
+## MyQueue
+
+It's a custom queue implementation built on top of the `MyArrayList<T>` dynamic array.
+
+---
+
+### Features
+
+- Generic type support (`T extends Comparable<T>`)
+- Follows FIFO principle (First-In-First-Out)
+- Core queue operations:
+  - `enqueue(item)` – add an element to the end
+  - `dequeue()` – remove and return the first element
+  - `peek()` – view the first element without removing
+- Utility methods:
+  - `isEmpty()` – check if the queue is empty
+  - `size()` – get current number of elements
+  - (Optional) `clear()`, `contains()`, `toArray()` – can be added easily
+
+---
+
+### Usage
+
+You can create and use the queue like this:
+
+```java
+MyQueue<Integer> queue = new MyQueue<>();
+queue.enqueue(10);
+queue.enqueue(20);
+queue.enqueue(30);
+
+System.out.println(queue.dequeue()); // 10
+System.out.println(queue.peek());    // 20
+System.out.println(queue.size());    // 2
+```
+
+---
+
