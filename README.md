@@ -12,4 +12,4 @@
 - convert to array
 
 # Usage
-you can check all of methods in 'Mylist' interface, and for deep understanding of methods logic you can check 'MyArrayList' class
+you can check all of methods in 'Mylist' interface, and for deep understanding of methods logic you can check 'MyArrayList' class   

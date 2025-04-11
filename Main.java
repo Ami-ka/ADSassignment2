@@ -21,9 +21,10 @@ public class Main {
         }
         MyArrayList<String> listStrings = new MyArrayList<>();
         listStrings.add("str1");
-        listStrings.add("str2");
+        listStrings.add("str21");
         listStrings.add("str3");
-        listStrings.add("str4");
+        listStrings.add("str4asldfj");
+        listStrings.sort();
         for(int i =0; i < listStrings.size(); i++){
             System.out.println(listStrings.get(i));
         }
@@ -32,6 +33,8 @@ public class Main {
         for(int i =0; i < list.size(); i++){
             System.out.println(list.get(i));
         }
-
+        // MyLinkedList<Integer> list = new MyLinkedList<>();
+        // list.add(10);
+        // System.out.println(list);
     }
 }
